@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.utils
+package com.notioncompose.editor.utils
 
 import kotlin.math.pow
 import kotlin.math.roundToInt

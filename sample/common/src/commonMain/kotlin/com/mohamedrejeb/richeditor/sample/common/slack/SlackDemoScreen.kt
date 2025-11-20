@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.sample.common.slack
+package com.notioncompose.editor.sample.common.slack
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -23,14 +23,14 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
-import com.mohamedrejeb.richeditor.annotation.ExperimentalRichTextApi
-import com.mohamedrejeb.richeditor.common.generated.resources.Res
-import com.mohamedrejeb.richeditor.common.generated.resources.slack_logo
-import com.mohamedrejeb.richeditor.model.RichTextState
-import com.mohamedrejeb.richeditor.model.rememberRichTextState
-import com.mohamedrejeb.richeditor.ui.material3.RichText
-import com.mohamedrejeb.richeditor.ui.material3.RichTextEditor
-import com.mohamedrejeb.richeditor.ui.material3.RichTextEditorDefaults
+import com.notioncompose.editor.annotation.ExperimentalRichTextApi
+import com.notioncompose.editor.common.generated.resources.Res
+import com.notioncompose.editor.common.generated.resources.slack_logo
+import com.notioncompose.editor.model.RichTextState
+import com.notioncompose.editor.model.rememberRichTextState
+import com.notioncompose.editor.ui.material3.RichText
+import com.notioncompose.editor.ui.material3.RichTextEditor
+import com.notioncompose.editor.ui.material3.RichTextEditorDefaults
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.painterResource
 

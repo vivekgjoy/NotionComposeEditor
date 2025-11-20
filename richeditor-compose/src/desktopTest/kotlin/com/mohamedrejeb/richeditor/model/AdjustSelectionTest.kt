@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.model
+package com.notioncompose.editor.model
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -20,7 +20,7 @@ import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.runDesktopComposeUiTest
 import androidx.compose.ui.text.TextRange
 import androidx.compose.ui.unit.dp
-import com.mohamedrejeb.richeditor.ui.BasicRichTextEditor
+import com.notioncompose.editor.ui.BasicRichTextEditor
 import kotlinx.coroutines.delay
 import org.junit.Rule
 import org.junit.Test

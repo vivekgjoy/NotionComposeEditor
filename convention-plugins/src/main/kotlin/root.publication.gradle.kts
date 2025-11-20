@@ -3,8 +3,8 @@ plugins {
 }
 
 allprojects {
-    group = "com.mohamedrejeb.richeditor"
-    version = System.getenv("VERSION") ?: "1.0.0-rc13"
+    group = "com.notioncompose"
+    version = System.getenv("VERSION") ?: "1.0.0"
 }
 
 nexusPublishing {

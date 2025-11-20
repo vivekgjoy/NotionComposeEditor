@@ -97,7 +97,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.mohamedrejeb.richeditor.sample.common"
+    namespace = "com.notioncompose.editor.sample.common"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
     sourceSets["main"].resources.srcDirs("src/commonMain/resources")
 

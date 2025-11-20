@@ -1,9 +1,9 @@
-package com.mohamedrejeb.richeditor.model
+package com.notioncompose.editor.model
 
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextDecoration
-import com.mohamedrejeb.richeditor.paragraph.type.OrderedListStyleType
-import com.mohamedrejeb.richeditor.paragraph.type.UnorderedListStyleType
+import com.notioncompose.editor.paragraph.type.OrderedListStyleType
+import com.notioncompose.editor.paragraph.type.UnorderedListStyleType
 
 public class RichTextConfig internal constructor(
     private val updateText: () -> Unit,
@@ -33,6 +33,18 @@ public class RichTextConfig internal constructor(
         }
 
     public var codeSpanStrokeColor: Color = Color.LightGray
+        set(value) {
+            field = value
+            updateText()
+        }
+
+    public var mentionColor: Color = Color.Blue
+        set(value) {
+            field = value
+            updateText()
+        }
+
+    public var hashtagColor: Color = Color.Blue
         set(value) {
             field = value
             updateText()

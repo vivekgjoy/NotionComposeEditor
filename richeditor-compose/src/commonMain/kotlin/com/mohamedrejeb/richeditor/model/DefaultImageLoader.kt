@@ -1,7 +1,7 @@
-package com.mohamedrejeb.richeditor.model
+package com.notioncompose.editor.model
 
 import androidx.compose.runtime.Composable
-import com.mohamedrejeb.richeditor.annotation.ExperimentalRichTextApi
+import com.notioncompose.editor.annotation.ExperimentalRichTextApi
 
 @ExperimentalRichTextApi
 public object DefaultImageLoader: ImageLoader {

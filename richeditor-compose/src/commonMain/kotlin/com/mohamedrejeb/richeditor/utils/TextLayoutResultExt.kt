@@ -1,11 +1,11 @@
-package com.mohamedrejeb.richeditor.utils
+package com.notioncompose.editor.utils
 
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Rect
 import androidx.compose.ui.text.TextLayoutResult
 import androidx.compose.ui.text.style.ResolvedTextDirection
-import com.mohamedrejeb.richeditor.annotation.ExperimentalRichTextApi
-import com.mohamedrejeb.richeditor.annotation.InternalRichTextApi
+import com.notioncompose.editor.annotation.ExperimentalRichTextApi
+import com.notioncompose.editor.annotation.InternalRichTextApi
 import kotlin.math.max
 import kotlin.math.min
 

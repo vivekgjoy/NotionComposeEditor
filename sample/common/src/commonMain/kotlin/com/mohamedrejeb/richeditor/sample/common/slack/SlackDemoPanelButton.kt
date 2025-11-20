@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.sample.common.slack
+package com.notioncompose.editor.sample.common.slack
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable

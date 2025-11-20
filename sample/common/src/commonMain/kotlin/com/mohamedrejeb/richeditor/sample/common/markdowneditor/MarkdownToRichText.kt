@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.sample.common.markdowneditor
+package com.notioncompose.editor.sample.common.markdowneditor
 
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
@@ -11,10 +11,10 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.unit.dp
-import com.mohamedrejeb.richeditor.annotation.ExperimentalRichTextApi
-import com.mohamedrejeb.richeditor.coil3.Coil3ImageLoader
-import com.mohamedrejeb.richeditor.model.rememberRichTextState
-import com.mohamedrejeb.richeditor.ui.material3.RichText
+import com.notioncompose.editor.annotation.ExperimentalRichTextApi
+import com.notioncompose.editor.coil3.Coil3ImageLoader
+import com.notioncompose.editor.model.rememberRichTextState
+import com.notioncompose.editor.ui.material3.RichText
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalRichTextApi::class)
 @Composable

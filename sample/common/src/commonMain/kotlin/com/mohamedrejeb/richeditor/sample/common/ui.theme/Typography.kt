@@ -1,19 +1,19 @@
-package com.mohamedrejeb.richeditor.sample.common.ui.theme
+package com.notioncompose.editor.sample.common.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
-import com.mohamedrejeb.richeditor.common.generated.resources.Raleway_Bold
-import com.mohamedrejeb.richeditor.common.generated.resources.Raleway_BoldItalic
-import com.mohamedrejeb.richeditor.common.generated.resources.Raleway_Italic
-import com.mohamedrejeb.richeditor.common.generated.resources.Raleway_Medium
-import com.mohamedrejeb.richeditor.common.generated.resources.Raleway_MediumItalic
-import com.mohamedrejeb.richeditor.common.generated.resources.Raleway_Regular
-import com.mohamedrejeb.richeditor.common.generated.resources.Raleway_SemiBold
-import com.mohamedrejeb.richeditor.common.generated.resources.Raleway_SemiBoldItalic
-import com.mohamedrejeb.richeditor.common.generated.resources.Res
+import com.notioncompose.editor.common.generated.resources.Raleway_Bold
+import com.notioncompose.editor.common.generated.resources.Raleway_BoldItalic
+import com.notioncompose.editor.common.generated.resources.Raleway_Italic
+import com.notioncompose.editor.common.generated.resources.Raleway_Medium
+import com.notioncompose.editor.common.generated.resources.Raleway_MediumItalic
+import com.notioncompose.editor.common.generated.resources.Raleway_Regular
+import com.notioncompose.editor.common.generated.resources.Raleway_SemiBold
+import com.notioncompose.editor.common.generated.resources.Raleway_SemiBoldItalic
+import com.notioncompose.editor.common.generated.resources.Res
 import org.jetbrains.compose.resources.Font
 
 val Raleway

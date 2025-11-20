@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.sample.common.richeditor
+package com.notioncompose.editor.sample.common.richeditor
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -11,13 +11,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.dp
-import com.mohamedrejeb.richeditor.model.rememberRichTextState
-import com.mohamedrejeb.richeditor.sample.common.components.RichTextStyleRow
-import com.mohamedrejeb.richeditor.sample.common.ui.theme.ComposeRichEditorTheme
-import com.mohamedrejeb.richeditor.ui.BasicRichTextEditor
-import com.mohamedrejeb.richeditor.ui.material3.OutlinedRichTextEditor
-import com.mohamedrejeb.richeditor.ui.material3.RichText
-import com.mohamedrejeb.richeditor.ui.material3.RichTextEditor
+import com.notioncompose.editor.model.rememberRichTextState
+import com.notioncompose.editor.sample.common.components.RichTextStyleRow
+import com.notioncompose.editor.sample.common.ui.theme.ComposeRichEditorTheme
+import com.notioncompose.editor.ui.BasicRichTextEditor
+import com.notioncompose.editor.ui.material3.OutlinedRichTextEditor
+import com.notioncompose.editor.ui.material3.RichText
+import com.notioncompose.editor.ui.material3.RichTextEditor
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
 @Composable
@@ -172,6 +172,51 @@ fun RichEditorScreen(
                         modifier = Modifier.fillMaxWidth(),
                         state = richTextState,
                     )
+                }
+                
+                item {
+                    HorizontalDivider(modifier = Modifier.padding(vertical = 20.dp))
+                }
+                
+                // Export buttons
+                item {
+                    Text(
+                        text = "Export:",
+                        style = MaterialTheme.typography.titleMedium
+                    )
+                }
+                
+                item {
+                    Spacer(Modifier.height(8.dp))
+                }
+                
+                item {
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.spacedBy(8.dp)
+                    ) {
+                        Button(
+                            onClick = {
+                                val markdown = outlinedRichTextState.toMarkdown()
+                                // In a real app, you would copy to clipboard or save to file
+                                println("Markdown:\n$markdown")
+                            },
+                            modifier = Modifier.weight(1f)
+                        ) {
+                            Text("Export as Markdown")
+                        }
+                        
+                        Button(
+                            onClick = {
+                                val html = outlinedRichTextState.toHtml()
+                                // In a real app, you would copy to clipboard or save to file
+                                println("HTML:\n$html")
+                            },
+                            modifier = Modifier.weight(1f)
+                        ) {
+                            Text("Export as HTML")
+                        }
+                    }
                 }
             }
         }

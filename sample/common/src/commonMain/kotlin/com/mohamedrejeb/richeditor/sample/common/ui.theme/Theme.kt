@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.sample.common.ui.theme
+package com.notioncompose.editor.sample.common.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
@@ -6,7 +6,7 @@ import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
-import com.mohamedrejeb.richeditor.sample.common.coil.setSingletonImageLoaderFactory
+import com.notioncompose.editor.sample.common.coil.setSingletonImageLoaderFactory
 
 private val LightColors = lightColorScheme(
     primary = md_theme_light_primary,

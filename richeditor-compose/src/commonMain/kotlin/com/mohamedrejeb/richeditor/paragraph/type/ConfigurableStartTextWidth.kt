@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.paragraph.type
+package com.notioncompose.editor.paragraph.type
 
 import androidx.compose.ui.unit.TextUnit
 

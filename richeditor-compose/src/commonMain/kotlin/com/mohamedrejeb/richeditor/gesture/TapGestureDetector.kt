@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.gesture
+package com.notioncompose.editor.gesture
 
 import androidx.compose.foundation.gestures.*
 import androidx.compose.ui.geometry.Offset

@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.ui
+package com.notioncompose.editor.ui
 
 import androidx.compose.foundation.interaction.Interaction
 import androidx.compose.foundation.interaction.MutableInteractionSource
@@ -25,7 +25,7 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.Density
 import androidx.compose.ui.unit.LayoutDirection
-import com.mohamedrejeb.richeditor.model.RichTextState
+import com.notioncompose.editor.model.RichTextState
 import kotlinx.coroutines.CoroutineScope
 
 /**

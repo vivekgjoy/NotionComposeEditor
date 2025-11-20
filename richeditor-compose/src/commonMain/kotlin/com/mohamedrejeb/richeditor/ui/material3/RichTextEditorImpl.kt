@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.ui.material3
+package com.notioncompose.editor.ui.material3
 
 import androidx.compose.animation.animateColor
 import androidx.compose.animation.core.*

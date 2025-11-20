@@ -1,4 +1,4 @@
-rootProject.name = "compose-richeditor"
+rootProject.name = "NotionComposeEditor"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 pluginManagement {

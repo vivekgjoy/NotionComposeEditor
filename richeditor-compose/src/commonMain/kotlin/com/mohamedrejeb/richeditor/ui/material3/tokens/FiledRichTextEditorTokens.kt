@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.ui.material3.tokens
+package com.notioncompose.editor.ui.material3.tokens
 
 import androidx.compose.ui.unit.dp
 

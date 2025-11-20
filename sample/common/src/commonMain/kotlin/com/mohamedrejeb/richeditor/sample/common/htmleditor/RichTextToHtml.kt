@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.sample.common.htmleditor
+package com.notioncompose.editor.sample.common.htmleditor
 
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
@@ -8,9 +8,9 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.dp
-import com.mohamedrejeb.richeditor.model.RichTextState
-import com.mohamedrejeb.richeditor.sample.common.components.RichTextStyleRow
-import com.mohamedrejeb.richeditor.ui.material3.OutlinedRichTextEditor
+import com.notioncompose.editor.model.RichTextState
+import com.notioncompose.editor.sample.common.components.RichTextStyleRow
+import com.notioncompose.editor.ui.material3.OutlinedRichTextEditor
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

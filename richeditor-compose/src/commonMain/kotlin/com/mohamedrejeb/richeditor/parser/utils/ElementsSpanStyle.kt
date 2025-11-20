@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.parser.utils
+package com.notioncompose.editor.parser.utils
 
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.SpanStyle

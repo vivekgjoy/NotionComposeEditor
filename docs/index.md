@@ -3,7 +3,7 @@
 [![MohamedRejeb](https://raw.githubusercontent.com/MohamedRejeb/MohamedRejeb/main/badges/mohamedrejeb.svg)](https://github.com/MohamedRejeb)
 [![Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-green.svg)](https://opensource.org/licenses/Apache-2.0)
 [![API](https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=21)
-[![Maven Central](https://img.shields.io/maven-central/v/com.mohamedrejeb.richeditor/richeditor-compose/1.0.0-rc13)](https://search.maven.org/search?q=g:%22com.mohamedrejeb.richeditor%22%20AND%20a:%22richeditor-compose%22)
+[![Maven Central](https://img.shields.io/maven-central/v/com.notioncompose.editor/richeditor-compose/1.0.0-rc13)](https://search.maven.org/search?q=g:%22com.notioncompose.editor%22%20AND%20a:%22richeditor-compose%22)
 
 ![Compose Rich Editor](images/logo-large-light.svg#only-light)
 ![Compose Rich Editor](images/logo-large-dark.svg#only-dark)
@@ -27,17 +27,17 @@ A rich text editor library for both Jetpack Compose and Compose Multiplatform, f
 
 ## Download
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.mohamedrejeb.richeditor/richeditor-compose/1.0.0-rc13)](https://search.maven.org/search?q=g:%22com.mohamedrejeb.richeditor%22%20AND%20a:%22richeditor-compose%22)
+[![Maven Central](https://img.shields.io/maven-central/v/com.notioncompose.editor/richeditor-compose/1.0.0-rc13)](https://search.maven.org/search?q=g:%22com.notioncompose.editor%22%20AND%20a:%22richeditor-compose%22)
 
 Compose Rich Editor is available on `mavenCentral()`.
 
 ```kotlin
-implementation("com.mohamedrejeb.richeditor:richeditor-compose:1.0.0-rc13")
+implementation("com.notioncompose.editor:richeditor-compose:1.0.0-rc13")
 ```
 
 ## Compatibility
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.mohamedrejeb.richeditor/richeditor-compose/1.0.0-rc13)](https://search.maven.org/search?q=g:%22com.mohamedrejeb.richeditor%22%20AND%20a:%22richeditor-compose%22)
+[![Maven Central](https://img.shields.io/maven-central/v/com.notioncompose.editor/richeditor-compose/1.0.0-rc13)](https://search.maven.org/search?q=g:%22com.notioncompose.editor%22%20AND%20a:%22richeditor-compose%22)
 
 | Kotlin version | Compose version | Compose Rich Editor version |
 |----------------|-----------------|-----------------------------|

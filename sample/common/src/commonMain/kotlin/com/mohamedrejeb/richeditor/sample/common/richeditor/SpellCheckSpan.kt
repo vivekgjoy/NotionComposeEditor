@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.sample.common.richeditor
+package com.notioncompose.editor.sample.common.richeditor
 
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Path
@@ -9,10 +9,10 @@ import androidx.compose.ui.text.TextLayoutResult
 import androidx.compose.ui.text.TextRange
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.util.fastForEach
-import com.mohamedrejeb.richeditor.annotation.ExperimentalRichTextApi
-import com.mohamedrejeb.richeditor.model.RichSpanStyle
-import com.mohamedrejeb.richeditor.model.RichTextConfig
-import com.mohamedrejeb.richeditor.utils.getBoundingBoxes
+import com.notioncompose.editor.annotation.ExperimentalRichTextApi
+import com.notioncompose.editor.model.RichSpanStyle
+import com.notioncompose.editor.model.RichTextConfig
+import com.notioncompose.editor.utils.getBoundingBoxes
 
 @OptIn(ExperimentalRichTextApi::class)
 object SpellCheck: RichSpanStyle {

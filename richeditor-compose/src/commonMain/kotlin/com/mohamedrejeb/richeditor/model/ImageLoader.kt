@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.model
+package com.notioncompose.editor.model
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.runtime.Composable
@@ -9,7 +9,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.layout.ContentScale
-import com.mohamedrejeb.richeditor.annotation.ExperimentalRichTextApi
+import com.notioncompose.editor.annotation.ExperimentalRichTextApi
 
 public interface ImageLoader {
 

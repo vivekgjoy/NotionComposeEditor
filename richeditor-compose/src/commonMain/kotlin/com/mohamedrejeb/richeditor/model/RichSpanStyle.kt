@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.model
+package com.notioncompose.editor.model
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.fillMaxSize
@@ -26,8 +26,8 @@ import androidx.compose.ui.unit.isSpecified
 import androidx.compose.ui.unit.isUnspecified
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.util.fastForEachIndexed
-import com.mohamedrejeb.richeditor.annotation.ExperimentalRichTextApi
-import com.mohamedrejeb.richeditor.utils.getBoundingBoxes
+import com.notioncompose.editor.annotation.ExperimentalRichTextApi
+import com.notioncompose.editor.utils.getBoundingBoxes
 
 @ExperimentalRichTextApi
 public interface RichSpanStyle {
@@ -292,6 +292,68 @@ public interface RichSpanStyle {
             result = 31 * result + width.hashCode()
             result = 31 * result + height.hashCode()
             return result
+        }
+    }
+
+    public class Mention(
+        public val username: String,
+    ) : RichSpanStyle {
+        override val spanStyle: (RichTextConfig) -> SpanStyle = {
+            SpanStyle(
+                color = it.mentionColor,
+            )
+        }
+
+        override fun DrawScope.drawCustomStyle(
+            layoutResult: TextLayoutResult,
+            textRange: TextRange,
+            richTextConfig: RichTextConfig,
+            topPadding: Float,
+            startPadding: Float,
+        ): Unit = Unit
+
+        override val acceptNewTextInTheEdges: Boolean =
+            false
+
+        override fun equals(other: Any?): Boolean {
+            if (this === other) return true
+            if (other !is Mention) return false
+            return username == other.username
+        }
+
+        override fun hashCode(): Int {
+            return username.hashCode()
+        }
+    }
+
+    public class Hashtag(
+        public val tag: String,
+    ) : RichSpanStyle {
+        override val spanStyle: (RichTextConfig) -> SpanStyle = {
+            SpanStyle(
+                color = it.hashtagColor,
+            )
+        }
+
+        override fun DrawScope.drawCustomStyle(
+            layoutResult: TextLayoutResult,
+            textRange: TextRange,
+            richTextConfig: RichTextConfig,
+            topPadding: Float,
+            startPadding: Float,
+        ): Unit = Unit
+
+        override val acceptNewTextInTheEdges: Boolean =
+            false
+
+        override fun equals(other: Any?): Boolean {
+            if (this === other) return true
+            if (other !is Hashtag) return false
+            return tag == other.tag
+        }
+
+        override fun hashCode(): Int {
+            return tag.hashCode()
         }
     }
 

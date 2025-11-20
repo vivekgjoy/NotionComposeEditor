@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.parser.html
+package com.notioncompose.editor.parser.html
 
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.TextRange
@@ -6,20 +6,20 @@ import androidx.compose.ui.unit.sp
 import com.mohamedrejeb.ksoup.entities.KsoupEntities
 import com.mohamedrejeb.ksoup.html.parser.KsoupHtmlHandler
 import com.mohamedrejeb.ksoup.html.parser.KsoupHtmlParser
-import com.mohamedrejeb.richeditor.annotation.ExperimentalRichTextApi
-import com.mohamedrejeb.richeditor.model.*
-import com.mohamedrejeb.richeditor.paragraph.RichParagraph
-import com.mohamedrejeb.richeditor.paragraph.type.DefaultParagraph
-import com.mohamedrejeb.richeditor.paragraph.type.OrderedList
-import com.mohamedrejeb.richeditor.paragraph.type.ParagraphType
-import com.mohamedrejeb.richeditor.paragraph.type.UnorderedList
-import com.mohamedrejeb.richeditor.parser.RichTextStateParser
-import com.mohamedrejeb.richeditor.parser.utils.*
-import com.mohamedrejeb.richeditor.utils.customMerge
+import com.notioncompose.editor.annotation.ExperimentalRichTextApi
+import com.notioncompose.editor.model.*
+import com.notioncompose.editor.paragraph.RichParagraph
+import com.notioncompose.editor.paragraph.type.DefaultParagraph
+import com.notioncompose.editor.paragraph.type.OrderedList
+import com.notioncompose.editor.paragraph.type.ParagraphType
+import com.notioncompose.editor.paragraph.type.UnorderedList
+import com.notioncompose.editor.parser.RichTextStateParser
+import com.notioncompose.editor.parser.utils.*
+import com.notioncompose.editor.utils.customMerge
 import androidx.compose.ui.util.fastForEach
 import androidx.compose.ui.util.fastForEachIndexed
 import androidx.compose.ui.util.fastForEachReversed
-import com.mohamedrejeb.richeditor.paragraph.type.ConfigurableListLevel
+import com.notioncompose.editor.paragraph.type.ConfigurableListLevel
 
 internal object RichTextStateHtmlParser : RichTextStateParser<String> {
 

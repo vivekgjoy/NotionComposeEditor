@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.parser.markdown
+package com.notioncompose.editor.parser.markdown
 
 import kotlin.test.Test
 import kotlin.test.assertEquals

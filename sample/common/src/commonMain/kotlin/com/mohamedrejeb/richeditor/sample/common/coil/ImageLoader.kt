@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.sample.common.coil
+package com.notioncompose.editor.sample.common.coil
 
 import androidx.compose.runtime.Composable
 import coil3.ImageLoader

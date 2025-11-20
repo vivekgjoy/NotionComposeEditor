@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.paragraph.type
+package com.notioncompose.editor.paragraph.type
 
 @ConsistentCopyVisibility
 public data class UnorderedListStyleType private constructor(

@@ -1,260 +1,166 @@
-<h1 align="center">Compose Rich Editor</h1><br>
+# 🚀 NotionComposeEditor
 
-[![Kotlin](https://img.shields.io/badge/kotlin-2.1.10-blue.svg?logo=kotlin)](http://kotlinlang.org)
-[![Compose](https://img.shields.io/badge/compose-1.7.3-blue.svg?logo=jetpackcompose)](https://www.jetbrains.com/lp/compose-multiplatform)
-[![MohamedRejeb](https://raw.githubusercontent.com/MohamedRejeb/MohamedRejeb/main/badges/mohamedrejeb.svg)](https://github.com/MohamedRejeb)
+[![GitHub stars](https://img.shields.io/github/stars/vivekgjoy/NotionComposeEditor?style=social)](https://github.com/vivekgjoy/NotionComposeEditor)
+
+<div align="center">
+
+[![Kotlin](https://img.shields.io/badge/kotlin-2.2.10-blue.svg?logo=kotlin)](http://kotlinlang.org)
+[![Compose](https://img.shields.io/badge/compose-1.8.2-blue.svg?logo=jetpackcompose)](https://www.jetbrains.com/lp/compose-multiplatform)
 [![Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-green.svg)](https://opensource.org/licenses/Apache-2.0)
-[![API](https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=21)
-[![Maven Central](https://img.shields.io/maven-central/v/com.mohamedrejeb.richeditor/richeditor-compose/1.0.0-rc13)](https://search.maven.org/search?q=g:%22com.mohamedrejeb.richeditor%22%20AND%20a:%22richeditor-compose%22)
+[![Maven Central](https://img.shields.io/maven-central/v/com.notioncompose/richeditor-compose/1.0.0)](https://search.maven.org/search?q=g:%22com.notioncompose%22%20AND%20a:%22richeditor-compose%22)
 
-![Compose Rich Editor](docs/images/logo-large-light.svg#gh-light-mode-only)
-![Compose Rich Editor](docs/images/logo-large-dark.svg#gh-dark-mode-only)
+**The most powerful rich text editor for Compose Multiplatform** ✨
 
-A rich text editor library for both Jetpack Compose and Compose Multiplatform, fully customizable and supports the common rich text editor features
+Build Notion-like editing experiences with @mentions, #hashtags, images, code blocks, and more!
 
-- **Multiplatform**: Compose Rich Editor supports Compose Multiplatform (Android, iOS, Desktop, Web).
-- **Easy to use**: Compose Rich Editor's API leverages Kotlin's language features for simplicity and minimal boilerplate.
-- **WYSIWYG**: Compose Rich Editor is a WYSIWYG editor that supports the most common text styling features.
+[Features](#-features) • [Quick Start](#-quick-start) • [Documentation](#-documentation) • [Contributing](#-contributing)
 
-## Screenshots
+</div>
 
-### Slack Demo
-![Slack Demo](docs/images/screenshot-01.png)
+---
 
-### Html to Rich Text
-![Slack Demo](docs/images/screenshot-02.png)
+## ✨ Features
 
-### Markdown to Rich Text
-![Slack Demo](docs/images/screenshot-03.png)
+### 🎯 Core Features
+- **Multiplatform**: Android, iOS, Desktop, Web - Write once, run everywhere
+- **WYSIWYG Editing**: Real-time rich text editing with instant visual feedback
+- **Markdown & HTML**: Full import/export support for seamless content migration
+- **Customizable**: Extensive theming and styling options
 
-## Download
+### 🆕 Killer Features
+- **@Mentions & #Hashtags**: Auto-detected and styled in blue as you type
+- **Image Support**: Insert images from device/gallery with drag-to-resize
+- **Code Blocks**: Multi-line code blocks with syntax highlighting support
+- **Export Options**: Export to Markdown and HTML with one click
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.mohamedrejeb.richeditor/richeditor-compose/1.0.0-rc13)](https://search.maven.org/search?q=g:%22com.mohamedrejeb.richeditor%22%20AND%20a:%22richeditor-compose%22)
+### 📝 Rich Text Features
+- **Text Styling**: Bold, italic, underline, strikethrough
+- **Lists**: Ordered and unordered lists with nesting support
+- **Links**: Clickable hyperlinks with custom handlers
+- **Code Spans**: Inline code highlighting
+- **Paragraph Alignment**: Left, center, right, justify
 
-Compose Rich Editor is available on `mavenCentral()`.
+## 🚀 Quick Start
 
-```kotlin
-implementation("com.mohamedrejeb.richeditor:richeditor-compose:1.0.0-rc13")
-```
+### Installation
 
-## Compatibility
-
-[![Maven Central](https://img.shields.io/maven-central/v/com.mohamedrejeb.richeditor/richeditor-compose/1.0.0-rc13)](https://search.maven.org/search?q=g:%22com.mohamedrejeb.richeditor%22%20AND%20a:%22richeditor-compose%22)
-
-| Kotlin version | Compose version | Compose Rich Editor version |
-|----------------|-----------------|-----------------------------|
-| 2.1.21         | 1.8.2           | 1.0.0-rc13                  |
-| 2.1.10         | 1.7.3           | 1.0.0-rc11                  |
-| 2.0.21         | 1.7.0           | 1.0.0-rc10                  |
-| 2.0.20         | 1.6.11          | 1.0.0-rc09                  |
-| 2.0.10         | 1.6.11          | 1.0.0-rc06                  |
-| 2.0.0          | 1.6.10          | 1.0.0-rc05-k2               |
-| 1.9.24         | 1.6.10          | 1.0.0-rc05                  |
-
-## Quick Start
-
-#### RichTextState
-
-Use `RichTextEditor` composable to create a rich text editor.
-
-The `RichTextEditor` composable requires a `RichTextState` to manage the editor's state.
-
-To create a `RichTextState`, use the `rememberRichTextState` function:
+Add to your `build.gradle.kts`:
 
 ```kotlin
-val state = rememberRichTextState()
-
-RichTextEditor(
-    state = state,
-)
-```
-
-#### Styling Spans
-
-To style spans, `RichTextState` provides `toggleSpanStyle` method:
-
-```kotlin
-// Toggle a span style.
-richTextState.toggleSpanStyle(SpanStyle(fontWeight = FontWeight.Bold))
-```
-
-To get the current span style of the selection, use `RichTextState.currentSpanStyle`:
-
-```kotlin
-// Get the current span style.
-val currentSpanStyle = richTextState.currentSpanStyle
-val isBold = currentSpanStyle.fontWeight == FontWeight.Bold
-```
-
-#### Styling Paragraphs
-
-To style paragraphs, `RichTextState` provides `toggleParagraphStyle` method:
-
-```kotlin
-// Toggle a paragraph style.
-richTextState.toggleParagraphStyle(ParagraphStyle(textAlign = TextAlign.Center))
-```
-
-To get the current paragraph style of the selection, use `RichTextState.currentParagraphStyle`:
-
-```kotlin
-// Get the current paragraph style.
-val currentParagraphStyle = richTextState.currentParagraphStyle
-val isCentered = currentParagraphStyle.textAlign == TextAlign.Center
-```
-
-#### Add links
-
-To add links, `RichTextState` provides `addLink` method:
-
-```kotlin
-// Add link after selection.
-richTextState.addLink(
-    text = "Compose Rich Editor",
-    url = "https://github.com/MohamedRejeb/Compose-Rich-Editor"
-)
-```
-
-To get if the current selection is a link, use `RichTextState.isLink`:
-
-```kotlin
-// Get if the current selection is a link.
-val isLink = richTextState.isLink
-```
-
-By default, links will be opened by your platform's `UriHandler`, if however you want to
-handle the links on your own, you can override the composition local as such:
-
-```kotlin
-val myUriHandler by remember {
-    mutableStateOf(object : UriHandler {
-        override fun openUri(uri: String) {
-            // Handle the clicked link however you want
-        }
-    })
+dependencies {
+    implementation("com.notioncompose:richeditor-compose:1.0.0")
 }
-CompositionLocalProvider(LocalUriHandler provides myUriHandler) {
-    RichText(
-        state = richTextState,
+```
+
+### Basic Usage
+
+```kotlin
+@Composable
+fun MyEditor() {
+    val state = rememberRichTextState()
+    
+    RichTextEditor(
+        state = state,
         modifier = Modifier.fillMaxWidth()
     )
 }
 ```
 
-#### Add Code Blocks
+### @Mentions & #Hashtags
 
-To add code blocks, `RichTextState` provides `toggleCodeSpan` method:
-
-```kotlin
-// Toggle code span.
-richTextState.toggleCodeSpan()
-```
-
-To get if the current selection is a code block, use `RichTextState.isCodeSpan`:
+Mentions and hashtags are automatically detected and styled:
 
 ```kotlin
-// Get if the current selection is a code span.
-val isCodeSpan = richTextState.isCodeSpan
+// Just type @username or #hashtag - they turn blue automatically!
+val state = rememberRichTextState()
+state.addTextAfterSelection("Hey @john, check out #kotlin!")
 ```
 
-#### Ordered and Unordered Lists
-
-You can add ordered and unordered lists using `RichTextState`:
+### Export to Markdown/HTML
 
 ```kotlin
-// Toggle ordered list.
-richTextState.toggleOrderedList()
+// Export as Markdown
+val markdown = state.toMarkdown()
 
-// Toggle unordered list.
-richTextState.toggleUnorderedList()
+// Export as HTML
+val html = state.toHtml()
 ```
 
-You can get if the current selection is an ordered or unordered list, using `RichTextState`:
+### Image Insertion
 
 ```kotlin
-// Get if the current selection is an ordered list.
-val isOrderedList = richTextState.isOrderedList
-
-// Get if the current selection is an unordered list.
-val isUnorderedList = richTextState.isUnorderedList
+// Insert an image (platform-specific implementation needed)
+val imageModel = /* your image source */
+state.addRichSpan(
+    RichSpanStyle.Image(
+        model = imageModel,
+        width = 200.sp,
+        height = 200.sp
+    ),
+    textRange = TextRange(cursorPosition, cursorPosition)
+)
 ```
 
-#### Customizing the rich text configuration
-
-Some of the rich text editor's features can be customized, such as the color of the links and the code blocks.
+### Code Blocks
 
 ```kotlin
-richTextState.config.linkColor = Color.Blue
-richTextState.config.linkTextDecoration = TextDecoration.Underline
-richTextState.config.codeSpanColor = Color.Yellow
-richTextState.config.codeSpanBackgroundColor = Color.Transparent
-richTextState.config.codeSpanStrokeColor = Color.LightGray
+// Toggle code span for inline code
+state.toggleCodeSpan()
+
+// For multi-line code blocks, use paragraph styling
+// (Syntax highlighting support coming soon!)
 ```
 
-#### HTML import and export
+## 📚 Documentation
 
-To convert HTML to `RichTextState`, use `RichTextState.setHtml` method:
+- [Getting Started](docs/getting_started.md)
+- [Rich Text State](docs/rich_text_state.md)
+- [Span Styles](docs/span_style.md)
+- [Paragraph Styles](docs/paragraph_style.md)
+- [HTML Import/Export](docs/html_import_export.md)
+- [Markdown Import/Export](docs/markdown_import_export.md)
+
+## 🎨 Customization
 
 ```kotlin
-val html = "<p><b>Compose Rich Editor</b></p>"
-richTextState.setHtml(html)
+val state = rememberRichTextState()
+
+// Customize mention and hashtag colors
+state.config.mentionColor = Color.Blue
+state.config.hashtagColor = Color(0xFF2196F3)
+
+// Customize link appearance
+state.config.linkColor = Color.Blue
+state.config.linkTextDecoration = TextDecoration.Underline
+
+// Customize code blocks
+state.config.codeSpanColor = Color.Yellow
+state.config.codeSpanBackgroundColor = Color(0xFFF5F5F5)
+state.config.codeSpanStrokeColor = Color.LightGray
 ```
 
-To insert HTML content at a specific position, use `RichTextState.insertHtml` method:
+## 🌟 Examples
 
-```kotlin
-val html = "<b>inserted content</b>"
-richTextState.insertHtml(html, position = 5)
+Check out the [sample app](sample/) for complete examples including:
+- Rich text editing
+- HTML/Markdown conversion
+- Slack-like messaging interface
+- Export functionality
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
 ```
-
-To convert `RichTextState` to HTML, use `RichTextState.toHtml` method:
-
-```kotlin
-val html = richTextState.toHtml()
-```
-
-#### Markdown import and export
-
-To convert Markdown to `RichTextState`, use `RichTextState.setMarkdown` method:
-
-```kotlin
-val markdown = "**Compose** *Rich* Editor"
-richTextState.setMarkdown(markdown)
-```
-
-To insert Markdown content at a specific position, use `RichTextState.insertMarkdown` method:
-
-```kotlin
-val markdown = "**inserted** *content*"
-richTextState.insertMarkdown(markdown, position = 5)
-```
-
-To convert `RichTextState` to Markdown, use `RichTextState.toMarkdown` method:
-
-```kotlin
-val markdown = richTextState.toMarkdown()
-```
-
-Check out Compose Rich Editor's [full documentation](https://mohamedrejeb.github.io/compose-rich-editor/) for more details.
-
-## Web live demo
-You can try out the web demo [here](https://compose-richeditor.netlify.app/).
-
-## Contribution
-If you've found an error in this sample, please file an issue. <br>
-Feel free to help out by sending a pull request :heart:.
-
-[Code of Conduct](https://github.com/MohamedRejeb/Compose-Rich-Editor/blob/main/CODE_OF_CONDUCT.md)
-
-## Find this library useful? :heart:
-Support it by joining __[stargazers](https://github.com/MohamedRejeb/Compose-Rich-Editor/stargazers)__ for this repository. :star: <br>
-Also, __[follow me](https://github.com/MohamedRejeb)__ on GitHub for more libraries! 🤩
-
-You can always <a href="https://www.buymeacoffee.com/MohamedRejeb" target="_blank"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=MohamedRejeb&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff"></a>
-
-# License
-```markdown
-Copyright 2023 Mohamed Rejeb
+Copyright 2024 NotionComposeEditor Contributors
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -268,3 +174,17 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
+
+## ⭐ Show Your Support
+
+If this project helped you, please give it a ⭐ on GitHub!
+
+---
+
+<div align="center">
+
+**Built with ❤️ using Kotlin Multiplatform & Jetpack Compose**
+
+[Report Bug](https://github.com/NotionComposeEditor/NotionComposeEditor/issues) • [Request Feature](https://github.com/NotionComposeEditor/NotionComposeEditor/issues) • [Documentation](https://github.com/NotionComposeEditor/NotionComposeEditor/wiki)
+
+</div>

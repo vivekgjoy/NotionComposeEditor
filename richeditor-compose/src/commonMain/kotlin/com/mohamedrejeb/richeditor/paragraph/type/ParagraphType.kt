@@ -1,8 +1,8 @@
-package com.mohamedrejeb.richeditor.paragraph.type
+package com.notioncompose.editor.paragraph.type
 
 import androidx.compose.ui.text.ParagraphStyle
-import com.mohamedrejeb.richeditor.model.RichSpan
-import com.mohamedrejeb.richeditor.model.RichTextConfig
+import com.notioncompose.editor.model.RichSpan
+import com.notioncompose.editor.model.RichTextConfig
 
 internal interface ParagraphType {
 

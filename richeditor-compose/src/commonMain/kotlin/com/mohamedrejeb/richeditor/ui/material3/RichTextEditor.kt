@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.ui.material3
+package com.notioncompose.editor.ui.material3
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.interaction.Interaction
@@ -28,8 +28,8 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.*
-import com.mohamedrejeb.richeditor.model.RichTextState
-import com.mohamedrejeb.richeditor.ui.BasicRichTextEditor
+import com.notioncompose.editor.model.RichTextState
+import com.notioncompose.editor.ui.BasicRichTextEditor
 import kotlin.math.max
 import kotlin.math.roundToInt
 

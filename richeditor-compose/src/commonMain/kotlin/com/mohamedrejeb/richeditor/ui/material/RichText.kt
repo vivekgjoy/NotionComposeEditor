@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.ui.material
+package com.notioncompose.editor.ui.material
 
 import androidx.compose.foundation.text.InlineTextContent
 import androidx.compose.material.LocalContentAlpha
@@ -19,10 +19,10 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.TextUnit
-import com.mohamedrejeb.richeditor.model.ImageLoader
-import com.mohamedrejeb.richeditor.model.LocalImageLoader
-import com.mohamedrejeb.richeditor.model.RichTextState
-import com.mohamedrejeb.richeditor.ui.BasicRichText
+import com.notioncompose.editor.model.ImageLoader
+import com.notioncompose.editor.model.LocalImageLoader
+import com.notioncompose.editor.model.RichTextState
+import com.notioncompose.editor.ui.BasicRichText
 
 /**
  * High-level element that displays rich text and provides semantics / accessibility information.

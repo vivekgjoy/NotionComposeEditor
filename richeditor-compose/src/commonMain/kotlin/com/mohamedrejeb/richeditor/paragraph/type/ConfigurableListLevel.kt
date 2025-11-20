@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.paragraph.type
+package com.notioncompose.editor.paragraph.type
 
 internal interface ConfigurableListLevel {
 

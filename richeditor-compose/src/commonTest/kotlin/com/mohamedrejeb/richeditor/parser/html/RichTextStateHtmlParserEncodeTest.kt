@@ -1,10 +1,10 @@
-package com.mohamedrejeb.richeditor.parser.html
+package com.notioncompose.editor.parser.html
 
-import com.mohamedrejeb.richeditor.annotation.ExperimentalRichTextApi
-import com.mohamedrejeb.richeditor.model.RichSpanStyle
-import com.mohamedrejeb.richeditor.paragraph.type.OrderedList
-import com.mohamedrejeb.richeditor.paragraph.type.UnorderedList
-import com.mohamedrejeb.richeditor.parser.utils.H1SpanStyle
+import com.notioncompose.editor.annotation.ExperimentalRichTextApi
+import com.notioncompose.editor.model.RichSpanStyle
+import com.notioncompose.editor.paragraph.type.OrderedList
+import com.notioncompose.editor.paragraph.type.UnorderedList
+import com.notioncompose.editor.parser.utils.H1SpanStyle
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertIs

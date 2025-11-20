@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.ui
+package com.notioncompose.editor.ui
 
 import androidx.compose.foundation.gestures.awaitEachGesture
 import androidx.compose.foundation.text.BasicText
@@ -16,10 +16,10 @@ import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.text.TextLayoutResult
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextOverflow
-import com.mohamedrejeb.richeditor.gesture.detectTapGestures
-import com.mohamedrejeb.richeditor.model.ImageLoader
-import com.mohamedrejeb.richeditor.model.LocalImageLoader
-import com.mohamedrejeb.richeditor.model.RichTextState
+import com.notioncompose.editor.gesture.detectTapGestures
+import com.notioncompose.editor.model.ImageLoader
+import com.notioncompose.editor.model.LocalImageLoader
+import com.notioncompose.editor.model.RichTextState
 
 @Composable
 public fun BasicRichText(

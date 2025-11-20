@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.utils
+package com.notioncompose.editor.utils
 
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Shadow
@@ -13,9 +13,9 @@ import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.text.style.TextGeometricTransform
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.util.fastForEach
-import com.mohamedrejeb.richeditor.annotation.ExperimentalRichTextApi
-import com.mohamedrejeb.richeditor.model.RichSpan
-import com.mohamedrejeb.richeditor.model.RichSpanStyle
+import com.notioncompose.editor.annotation.ExperimentalRichTextApi
+import com.notioncompose.editor.model.RichSpan
+import com.notioncompose.editor.model.RichSpanStyle
 
 internal fun List<RichSpan>.getCommonStyle(strict: Boolean = false): SpanStyle? {
     if (this.isEmpty()) return null

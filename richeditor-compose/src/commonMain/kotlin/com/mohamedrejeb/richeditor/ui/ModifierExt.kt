@@ -1,11 +1,11 @@
-package com.mohamedrejeb.richeditor.ui
+package com.notioncompose.editor.ui
 
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.drawBehind
 import androidx.compose.ui.text.TextRange
-import com.mohamedrejeb.richeditor.annotation.ExperimentalRichTextApi
-import com.mohamedrejeb.richeditor.model.RichSpanStyle
-import com.mohamedrejeb.richeditor.model.RichTextState
+import com.notioncompose.editor.annotation.ExperimentalRichTextApi
+import com.notioncompose.editor.model.RichSpanStyle
+import com.notioncompose.editor.model.RichTextState
 import androidx.compose.ui.util.fastForEach
 
 @OptIn(ExperimentalRichTextApi::class)

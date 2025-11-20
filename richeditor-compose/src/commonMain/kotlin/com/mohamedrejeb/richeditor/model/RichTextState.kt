@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.model
+package com.notioncompose.editor.model
 
 import androidx.compose.foundation.text.InlineTextContent
 import androidx.compose.runtime.*
@@ -27,13 +27,13 @@ import androidx.compose.ui.unit.Density
 import androidx.compose.ui.util.fastFirstOrNull
 import androidx.compose.ui.util.fastForEach
 import androidx.compose.ui.util.fastForEachIndexed
-import com.mohamedrejeb.richeditor.annotation.ExperimentalRichTextApi
-import com.mohamedrejeb.richeditor.paragraph.RichParagraph
-import com.mohamedrejeb.richeditor.paragraph.type.*
-import com.mohamedrejeb.richeditor.paragraph.type.ParagraphType.Companion.startText
-import com.mohamedrejeb.richeditor.parser.html.RichTextStateHtmlParser
-import com.mohamedrejeb.richeditor.parser.markdown.RichTextStateMarkdownParser
-import com.mohamedrejeb.richeditor.utils.*
+import com.notioncompose.editor.annotation.ExperimentalRichTextApi
+import com.notioncompose.editor.paragraph.RichParagraph
+import com.notioncompose.editor.paragraph.type.*
+import com.notioncompose.editor.paragraph.type.ParagraphType.Companion.startText
+import com.notioncompose.editor.parser.html.RichTextStateHtmlParser
+import com.notioncompose.editor.parser.markdown.RichTextStateMarkdownParser
+import com.notioncompose.editor.utils.*
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.delay
@@ -1663,6 +1663,57 @@ public class RichTextState internal constructor(
             )
         }
         styledRichSpanList.addAll(newStyledRichSpanList)
+        
+        // Auto-detect and apply mention/hashtag styles
+        detectAndApplyMentionsAndHashtags()
+    }
+    
+    /**
+     * Detects @mentions and #hashtags in the text and applies the appropriate RichSpanStyle.
+     * This is a simplified implementation that processes all rich spans.
+     */
+    private fun detectAndApplyMentionsAndHashtags() {
+        val text = textFieldValue.text
+        if (text.isEmpty()) return
+        
+        val mentionPattern = Regex("@(\\w+)")
+        val hashtagPattern = Regex("#(\\w+)")
+        
+        var needsUpdate = false
+        
+        // Process all paragraphs and spans
+        richParagraphList.forEach { paragraph ->
+            paragraph.children.forEach { richSpan ->
+                val spanText = richSpan.text
+                if (spanText.isEmpty()) return@forEach
+                
+                // Check for mentions
+                mentionPattern.findAll(spanText).forEach { match ->
+                    val mentionText = match.value
+                    val username = match.groupValues[1]
+                    // If the span text exactly matches the mention, apply the style
+                    if (spanText.trim() == mentionText && richSpan.richSpanStyle !is RichSpanStyle.Mention) {
+                        richSpan.richSpanStyle = RichSpanStyle.Mention(username)
+                        needsUpdate = true
+                    }
+                }
+                
+                // Check for hashtags
+                hashtagPattern.findAll(spanText).forEach { match ->
+                    val hashtagText = match.value
+                    val tag = match.groupValues[1]
+                    // If the span text exactly matches the hashtag, apply the style
+                    if (spanText.trim() == hashtagText && richSpan.richSpanStyle !is RichSpanStyle.Hashtag) {
+                        richSpan.richSpanStyle = RichSpanStyle.Hashtag(tag)
+                        needsUpdate = true
+                    }
+                }
+            }
+        }
+        
+        if (needsUpdate) {
+            updateAnnotatedString(textFieldValue)
+        }
     }
 
     /**

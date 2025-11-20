@@ -1,12 +1,12 @@
-package com.mohamedrejeb.richeditor.model
+package com.notioncompose.editor.model
 
 import androidx.compose.ui.text.TextRange
 import androidx.compose.ui.text.input.TextFieldValue
-import com.mohamedrejeb.richeditor.annotation.ExperimentalRichTextApi
-import com.mohamedrejeb.richeditor.paragraph.RichParagraph
-import com.mohamedrejeb.richeditor.paragraph.type.DefaultParagraph
-import com.mohamedrejeb.richeditor.paragraph.type.UnorderedList
-import com.mohamedrejeb.richeditor.paragraph.type.UnorderedListStyleType
+import com.notioncompose.editor.annotation.ExperimentalRichTextApi
+import com.notioncompose.editor.paragraph.RichParagraph
+import com.notioncompose.editor.paragraph.type.DefaultParagraph
+import com.notioncompose.editor.paragraph.type.UnorderedList
+import com.notioncompose.editor.paragraph.type.UnorderedListStyleType
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertIs

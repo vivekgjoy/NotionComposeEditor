@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.sample.common.slack
+package com.notioncompose.editor.sample.common.slack
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -25,7 +25,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.mohamedrejeb.richeditor.model.RichTextState
+import com.notioncompose.editor.model.RichTextState
 
 @Composable
 fun SlackDemoPanel(

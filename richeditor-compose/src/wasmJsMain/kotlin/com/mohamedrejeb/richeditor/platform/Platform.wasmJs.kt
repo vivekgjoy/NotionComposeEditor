@@ -1,3 +1,3 @@
-package com.mohamedrejeb.richeditor.platform
+package com.notioncompose.editor.platform
 
 internal actual val currentPlatform: Platform = Platform.WebWasm

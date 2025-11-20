@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.parser.html
+package com.notioncompose.editor.parser.html
 
 /**
  * Removes extra spaces from the given input. Because in HTML, extra spaces are ignored as well as new lines.

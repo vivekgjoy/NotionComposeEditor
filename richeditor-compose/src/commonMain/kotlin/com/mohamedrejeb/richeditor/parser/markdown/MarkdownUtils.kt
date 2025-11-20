@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.parser.markdown
+package com.notioncompose.editor.parser.markdown
 
 import androidx.compose.ui.util.fastForEach
 import org.intellij.markdown.MarkdownElementTypes

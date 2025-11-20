@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.utils
+package com.notioncompose.editor.utils
 
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.AnnotatedString
@@ -7,12 +7,12 @@ import androidx.compose.ui.text.TextRange
 import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.util.fastForEach
 import androidx.compose.ui.util.fastForEachIndexed
-import com.mohamedrejeb.richeditor.annotation.ExperimentalRichTextApi
-import com.mohamedrejeb.richeditor.model.RichSpan
-import com.mohamedrejeb.richeditor.model.RichSpanStyle
-import com.mohamedrejeb.richeditor.model.RichTextConfig
-import com.mohamedrejeb.richeditor.model.RichTextState
-import com.mohamedrejeb.richeditor.ui.RichTextClipboardManager
+import com.notioncompose.editor.annotation.ExperimentalRichTextApi
+import com.notioncompose.editor.model.RichSpan
+import com.notioncompose.editor.model.RichSpanStyle
+import com.notioncompose.editor.model.RichTextConfig
+import com.notioncompose.editor.model.RichTextState
+import com.notioncompose.editor.ui.RichTextClipboardManager
 import kotlin.math.max
 import kotlin.math.min
 

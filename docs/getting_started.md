@@ -4,7 +4,7 @@
 
 Compose Rich Editor has only one artifact, for now, published to `mavenCentral()`:
 
-* `com.mohamedrejeb.richeditor:richeditor-compose`: The default artifact which includes all the functionalities of the library.
+* `com.notioncompose.editor:richeditor-compose`: The default artifact which includes all the functionalities of the library.
 
 My goal is to move the core functionalities of the library to a separate artifact and keep the default artifact as a wrapper around the core artifact,
 so I can support other targets like Android Views and Compose HTML.

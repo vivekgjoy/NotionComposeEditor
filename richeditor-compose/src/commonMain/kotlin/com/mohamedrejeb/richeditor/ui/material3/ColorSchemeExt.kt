@@ -1,11 +1,11 @@
-package com.mohamedrejeb.richeditor.ui.material3
+package com.notioncompose.editor.ui.material3
 
 import androidx.compose.material3.ColorScheme
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.ReadOnlyComposable
 import androidx.compose.ui.graphics.Color
-import com.mohamedrejeb.richeditor.ui.material3.tokens.ColorSchemeKeyTokens
+import com.notioncompose.editor.ui.material3.tokens.ColorSchemeKeyTokens
 
 /**
  * Helper function for component color tokens. Here is an example on how to use component color

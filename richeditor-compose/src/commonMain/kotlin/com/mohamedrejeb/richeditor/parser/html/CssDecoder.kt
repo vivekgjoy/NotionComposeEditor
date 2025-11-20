@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.parser.html
+package com.notioncompose.editor.parser.html
 
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Shadow
@@ -14,9 +14,9 @@ import androidx.compose.ui.text.style.TextDirection
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.isSpecified
 import androidx.compose.ui.unit.isUnspecified
-import com.mohamedrejeb.richeditor.parser.utils.MarkBackgroundColor
-import com.mohamedrejeb.richeditor.parser.utils.SmallFontSize
-import com.mohamedrejeb.richeditor.utils.maxDecimals
+import com.notioncompose.editor.parser.utils.MarkBackgroundColor
+import com.notioncompose.editor.parser.utils.SmallFontSize
+import com.notioncompose.editor.utils.maxDecimals
 import kotlin.math.roundToInt
 
 internal object CssDecoder {

@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.parser.markdown
+package com.notioncompose.editor.parser.markdown
 
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.TextRange
@@ -6,13 +6,13 @@ import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.text.style.TextDecoration
-import com.mohamedrejeb.richeditor.annotation.ExperimentalRichTextApi
-import com.mohamedrejeb.richeditor.model.RichSpanStyle
-import com.mohamedrejeb.richeditor.model.RichTextState
-import com.mohamedrejeb.richeditor.paragraph.type.DefaultParagraph
-import com.mohamedrejeb.richeditor.paragraph.type.OrderedList
-import com.mohamedrejeb.richeditor.parser.utils.H1SpanStyle
-import com.mohamedrejeb.richeditor.parser.utils.H2SpanStyle
+import com.notioncompose.editor.annotation.ExperimentalRichTextApi
+import com.notioncompose.editor.model.RichSpanStyle
+import com.notioncompose.editor.model.RichTextState
+import com.notioncompose.editor.paragraph.type.DefaultParagraph
+import com.notioncompose.editor.paragraph.type.OrderedList
+import com.notioncompose.editor.parser.utils.H1SpanStyle
+import com.notioncompose.editor.parser.utils.H2SpanStyle
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertIs

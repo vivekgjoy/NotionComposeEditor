@@ -1,14 +1,14 @@
-package com.mohamedrejeb.richeditor.sample.common.navigation
+package com.notioncompose.editor.sample.common.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.mohamedrejeb.richeditor.sample.common.home.HomeScreen
-import com.mohamedrejeb.richeditor.sample.common.htmleditor.HtmlEditorContent
-import com.mohamedrejeb.richeditor.sample.common.markdowneditor.MarkdownEditorContent
-import com.mohamedrejeb.richeditor.sample.common.richeditor.RichEditorScreen
-import com.mohamedrejeb.richeditor.sample.common.slack.SlackDemoScreen
+import com.notioncompose.editor.sample.common.home.HomeScreen
+import com.notioncompose.editor.sample.common.htmleditor.HtmlEditorContent
+import com.notioncompose.editor.sample.common.markdowneditor.MarkdownEditorContent
+import com.notioncompose.editor.sample.common.richeditor.RichEditorScreen
+import com.notioncompose.editor.sample.common.slack.SlackDemoScreen
 
 private const val HOME_ROUTE = "home"
 private const val RICH_EDITOR_ROUTE = "richEditor"

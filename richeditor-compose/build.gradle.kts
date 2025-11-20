@@ -72,7 +72,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.mohamedrejeb.richeditor.compose"
+    namespace = "com.notioncompose.editor.compose"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
 
     defaultConfig {

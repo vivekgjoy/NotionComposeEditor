@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.coil3
+package com.notioncompose.editor.coil3
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -8,9 +8,9 @@ import androidx.compose.runtime.setValue
 import androidx.compose.runtime.remember
 import coil3.compose.AsyncImagePainter
 import coil3.compose.rememberAsyncImagePainter
-import com.mohamedrejeb.richeditor.annotation.ExperimentalRichTextApi
-import com.mohamedrejeb.richeditor.model.ImageData
-import com.mohamedrejeb.richeditor.model.ImageLoader
+import com.notioncompose.editor.annotation.ExperimentalRichTextApi
+import com.notioncompose.editor.model.ImageData
+import com.notioncompose.editor.model.ImageLoader
 
 @ExperimentalRichTextApi
 public object Coil3ImageLoader : ImageLoader {

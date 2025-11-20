@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.ui.material3
+package com.notioncompose.editor.ui.material3
 
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.CornerBasedShape
@@ -10,7 +10,7 @@ import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.unit.dp
-import com.mohamedrejeb.richeditor.ui.material3.tokens.ShapeKeyTokens
+import com.notioncompose.editor.ui.material3.tokens.ShapeKeyTokens
 
 /** Helper function for component shape tokens. Used to grab the top values of a shape parameter. */
 internal fun CornerBasedShape.top(): CornerBasedShape {

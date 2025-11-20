@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.ui.test
+package com.notioncompose.editor.ui.test
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
@@ -8,9 +8,9 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.mohamedrejeb.richeditor.model.RichSpan
-import com.mohamedrejeb.richeditor.model.RichTextState
-import com.mohamedrejeb.richeditor.ui.material3.RichTextEditor
+import com.notioncompose.editor.model.RichSpan
+import com.notioncompose.editor.model.RichTextState
+import com.notioncompose.editor.ui.material3.RichTextEditor
 import androidx.compose.ui.util.fastForEachIndexed
 
 @Composable

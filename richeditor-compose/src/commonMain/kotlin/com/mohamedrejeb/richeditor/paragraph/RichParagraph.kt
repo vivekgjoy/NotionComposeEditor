@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.paragraph
+package com.notioncompose.editor.paragraph
 
 import androidx.compose.ui.text.ParagraphStyle
 import androidx.compose.ui.text.SpanStyle
@@ -6,12 +6,12 @@ import androidx.compose.ui.text.TextRange
 import androidx.compose.ui.util.fastForEach
 import androidx.compose.ui.util.fastForEachIndexed
 import androidx.compose.ui.util.fastForEachReversed
-import com.mohamedrejeb.richeditor.annotation.ExperimentalRichTextApi
-import com.mohamedrejeb.richeditor.model.RichSpan
-import com.mohamedrejeb.richeditor.paragraph.type.DefaultParagraph
-import com.mohamedrejeb.richeditor.paragraph.type.ParagraphType
-import com.mohamedrejeb.richeditor.paragraph.type.ParagraphType.Companion.startText
-import com.mohamedrejeb.richeditor.ui.test.getRichTextStyleTreeRepresentation
+import com.notioncompose.editor.annotation.ExperimentalRichTextApi
+import com.notioncompose.editor.model.RichSpan
+import com.notioncompose.editor.paragraph.type.DefaultParagraph
+import com.notioncompose.editor.paragraph.type.ParagraphType
+import com.notioncompose.editor.paragraph.type.ParagraphType.Companion.startText
+import com.notioncompose.editor.ui.test.getRichTextStyleTreeRepresentation
 
 internal class RichParagraph(
     val key: Int = 0,

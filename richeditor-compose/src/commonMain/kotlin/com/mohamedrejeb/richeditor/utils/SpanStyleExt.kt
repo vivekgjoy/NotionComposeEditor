@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.utils
+package com.notioncompose.editor.utils
 
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Shadow
@@ -15,7 +15,7 @@ import androidx.compose.ui.text.style.TextGeometricTransform
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.isSpecified
 import androidx.compose.ui.unit.isUnspecified
-import com.mohamedrejeb.richeditor.model.RichSpan
+import com.notioncompose.editor.model.RichSpan
 
 /**
  * Merge two [SpanStyle]s together.

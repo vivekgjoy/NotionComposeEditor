@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.utils
+package com.notioncompose.editor.utils
 
 import kotlin.contracts.ExperimentalContracts
 import kotlin.contracts.contract

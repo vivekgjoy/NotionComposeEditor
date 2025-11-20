@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.model
+package com.notioncompose.editor.model
 
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.sp

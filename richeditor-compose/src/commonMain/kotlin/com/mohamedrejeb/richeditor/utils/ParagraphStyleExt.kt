@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.utils
+package com.notioncompose.editor.utils
 
 import androidx.compose.ui.text.ParagraphStyle
 import androidx.compose.ui.text.style.Hyphens
@@ -7,7 +7,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextDirection
 import androidx.compose.ui.unit.isSpecified
 import androidx.compose.ui.unit.isUnspecified
-import com.mohamedrejeb.richeditor.paragraph.RichParagraph
+import com.notioncompose.editor.paragraph.RichParagraph
 
 internal fun ParagraphStyle.unmerge(
     other: ParagraphStyle?,

@@ -1,12 +1,12 @@
-package com.mohamedrejeb.richeditor.utils
+package com.notioncompose.editor.utils
 
 import androidx.compose.ui.text.ParagraphStyle
 import androidx.compose.ui.text.PlatformParagraphStyle
 import androidx.compose.ui.text.style.*
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.util.fastForEach
-import com.mohamedrejeb.richeditor.paragraph.RichParagraph
-import com.mohamedrejeb.richeditor.paragraph.type.ParagraphType
+import com.notioncompose.editor.paragraph.RichParagraph
+import com.notioncompose.editor.paragraph.type.ParagraphType
 
 internal fun List<RichParagraph>.getCommonStyle(): ParagraphStyle? {
     if (this.isEmpty()) return null

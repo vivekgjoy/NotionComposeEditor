@@ -1,11 +1,11 @@
-package com.mohamedrejeb.richeditor.utils
+package com.notioncompose.editor.utils
 
 import androidx.compose.ui.util.fastForEach
 import androidx.compose.ui.util.fastForEachIndexed
-import com.mohamedrejeb.richeditor.annotation.ExperimentalRichTextApi
-import com.mohamedrejeb.richeditor.model.RichSpan
-import com.mohamedrejeb.richeditor.paragraph.RichParagraph
-import com.mohamedrejeb.richeditor.paragraph.type.ParagraphType.Companion.startText
+import com.notioncompose.editor.annotation.ExperimentalRichTextApi
+import com.notioncompose.editor.model.RichSpan
+import com.notioncompose.editor.paragraph.RichParagraph
+import com.notioncompose.editor.paragraph.type.ParagraphType.Companion.startText
 import kotlin.text.buildString
 import kotlin.text.appendLine
 import kotlin.text.StringBuilder

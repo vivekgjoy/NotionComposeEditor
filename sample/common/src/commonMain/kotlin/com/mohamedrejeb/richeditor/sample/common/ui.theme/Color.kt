@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.sample.common.ui.theme
+package com.notioncompose.editor.sample.common.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

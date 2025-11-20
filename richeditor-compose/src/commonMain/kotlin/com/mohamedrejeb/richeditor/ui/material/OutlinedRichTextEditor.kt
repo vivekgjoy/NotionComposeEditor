@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.ui.material
+package com.notioncompose.editor.ui.material
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.interaction.Interaction
@@ -19,9 +19,9 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
-import com.mohamedrejeb.richeditor.model.RichTextState
-import com.mohamedrejeb.richeditor.ui.BasicRichTextEditor
-import com.mohamedrejeb.richeditor.ui.RichTextChangedListener
+import com.notioncompose.editor.model.RichTextState
+import com.notioncompose.editor.ui.BasicRichTextEditor
+import com.notioncompose.editor.ui.RichTextChangedListener
 
 /**
  * Material Design outlined rich text field

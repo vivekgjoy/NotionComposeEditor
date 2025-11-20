@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.platform
+package com.notioncompose.editor.platform
 
 internal enum class Platform {
     Android, IOS, Desktop, WebJs, WebWasm;

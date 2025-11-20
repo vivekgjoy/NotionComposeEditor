@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.annotation
+package com.notioncompose.editor.annotation
 
 @RequiresOptIn(
     level = RequiresOptIn.Level.ERROR,

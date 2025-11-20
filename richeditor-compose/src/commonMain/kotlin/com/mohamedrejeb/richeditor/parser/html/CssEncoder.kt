@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.parser.html
+package com.notioncompose.editor.parser.html
 
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color

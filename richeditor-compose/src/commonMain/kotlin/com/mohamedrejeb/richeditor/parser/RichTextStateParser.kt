@@ -1,6 +1,6 @@
-package com.mohamedrejeb.richeditor.parser
+package com.notioncompose.editor.parser
 
-import com.mohamedrejeb.richeditor.model.RichTextState
+import com.notioncompose.editor.model.RichTextState
 
 internal interface RichTextStateParser<T> {
 

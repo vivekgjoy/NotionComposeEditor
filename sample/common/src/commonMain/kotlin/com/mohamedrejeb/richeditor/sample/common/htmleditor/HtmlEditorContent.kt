@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.sample.common.htmleditor
+package com.notioncompose.editor.sample.common.htmleditor
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
@@ -10,7 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.text.style.TextDecoration
-import com.mohamedrejeb.richeditor.model.rememberRichTextState
+import com.notioncompose.editor.model.rememberRichTextState
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
 @Composable

@@ -1,14 +1,14 @@
-package com.mohamedrejeb.richeditor.ui
+package com.notioncompose.editor.ui
 
 import androidx.compose.ui.platform.ClipboardManager
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.withStyle
-import com.mohamedrejeb.richeditor.annotation.ExperimentalRichTextApi
-import com.mohamedrejeb.richeditor.model.RichSpanStyle
-import com.mohamedrejeb.richeditor.model.RichTextState
-import com.mohamedrejeb.richeditor.paragraph.type.ParagraphType.Companion.startText
-import com.mohamedrejeb.richeditor.utils.append
+import com.notioncompose.editor.annotation.ExperimentalRichTextApi
+import com.notioncompose.editor.model.RichSpanStyle
+import com.notioncompose.editor.model.RichTextState
+import com.notioncompose.editor.paragraph.type.ParagraphType.Companion.startText
+import com.notioncompose.editor.utils.append
 import androidx.compose.ui.util.fastForEachIndexed
 import kotlin.math.max
 import kotlin.math.min

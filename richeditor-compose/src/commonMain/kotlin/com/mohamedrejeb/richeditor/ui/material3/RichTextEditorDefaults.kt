@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.ui.material3
+package com.notioncompose.editor.ui.material3
 
 import androidx.compose.material3.*
 import androidx.compose.material3.Typography
@@ -32,8 +32,8 @@ import androidx.compose.ui.platform.debugInspectorInfo
 import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.mohamedrejeb.richeditor.ui.material3.tokens.FiledRichTextEditorTokens
-import com.mohamedrejeb.richeditor.ui.material3.tokens.OutlinedRichTextEditorTokens
+import com.notioncompose.editor.ui.material3.tokens.FiledRichTextEditorTokens
+import com.notioncompose.editor.ui.material3.tokens.OutlinedRichTextEditorTokens
 
 /**
  * Contains the default values used by [TextField] and [OutlinedTextField].

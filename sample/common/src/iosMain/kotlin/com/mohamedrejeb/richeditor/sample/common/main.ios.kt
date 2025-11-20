@@ -1,4 +1,4 @@
-package com.mohamedrejeb.richeditor.sample.common
+package com.notioncompose.editor.sample.common
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize

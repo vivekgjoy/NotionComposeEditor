@@ -1,8 +1,8 @@
-package com.mohamedrejeb.richeditor.sample.common
+package com.notioncompose.editor.sample.common
 
 import androidx.compose.runtime.*
-import com.mohamedrejeb.richeditor.sample.common.navigation.NavGraph
-import com.mohamedrejeb.richeditor.sample.common.ui.theme.ComposeRichEditorTheme
+import com.notioncompose.editor.sample.common.navigation.NavGraph
+import com.notioncompose.editor.sample.common.ui.theme.ComposeRichEditorTheme
 
 @Composable
 fun App() {
