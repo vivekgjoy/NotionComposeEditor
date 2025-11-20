@@ -48,7 +48,7 @@ Add to your `build.gradle.kts`:
 
 ```kotlin
 dependencies {
-    implementation("com.notioncompose:richeditor-compose:1.0.0")
+    implementation("com.notioncompose:notioncomposeeditor:1.0.0")
 }
 ```
 
