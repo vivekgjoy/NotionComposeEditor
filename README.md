@@ -9,7 +9,7 @@
 [![Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-green.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Maven Central](https://img.shields.io/maven-central/v/com.notioncompose/richeditor-compose/1.0.0)](https://search.maven.org/search?q=g:%22com.notioncompose%22%20AND%20a:%22richeditor-compose%22)
 
-**The most powerful rich text editor for Compose Multiplatform** ✨
+**The most powerful Notion-style text editor for Compose Multiplatform** ✨
 
 Build Notion-like editing experiences with @mentions, #hashtags, images, code blocks, and more!
 
@@ -23,7 +23,7 @@ Build Notion-like editing experiences with @mentions, #hashtags, images, code bl
 
 ### 🎯 Core Features
 - **Multiplatform**: Android, iOS, Desktop, Web - Write once, run everywhere
-- **WYSIWYG Editing**: Real-time rich text editing with instant visual feedback
+- **WYSIWYG Editing**: Real-time formatted text editing with instant visual feedback
 - **Markdown & HTML**: Full import/export support for seamless content migration
 - **Customizable**: Extensive theming and styling options
 
@@ -33,7 +33,7 @@ Build Notion-like editing experiences with @mentions, #hashtags, images, code bl
 - **Code Blocks**: Multi-line code blocks with syntax highlighting support
 - **Export Options**: Export to Markdown and HTML with one click
 
-### 📝 Rich Text Features
+### 📝 Text Formatting Features
 - **Text Styling**: Bold, italic, underline, strikethrough
 - **Lists**: Ordered and unordered lists with nesting support
 - **Links**: Clickable hyperlinks with custom handlers
@@ -114,7 +114,7 @@ state.toggleCodeSpan()
 ## 📚 Documentation
 
 - [Getting Started](docs/getting_started.md)
-- [Rich Text State](docs/rich_text_state.md)
+- [Text State](docs/rich_text_state.md)
 - [Span Styles](docs/span_style.md)
 - [Paragraph Styles](docs/paragraph_style.md)
 - [HTML Import/Export](docs/html_import_export.md)
@@ -142,7 +142,7 @@ state.config.codeSpanStrokeColor = Color.LightGray
 ## 🌟 Examples
 
 Check out the [sample app](sample/) for complete examples including:
-- Rich text editing
+- Formatted text editing
 - HTML/Markdown conversion
 - Slack-like messaging interface
 - Export functionality

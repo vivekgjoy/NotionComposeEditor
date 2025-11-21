@@ -33,7 +33,7 @@ fun RichTextToMarkdown(
                 .weight(1f)
         ) {
             Text(
-                text = "Rich Text Editor:",
+                text = "NotionComposeEditor:",
                 style = MaterialTheme.typography.titleMedium
             )
 

@@ -31,7 +31,7 @@ fun RichEditorScreen(
     LaunchedEffect(Unit) {
         richTextState.setHtml(
             """
-            <p><b>RichTextEditor</b> is a <i>composable</i> that allows you to edit <u>rich text</u> content.</p>
+            <p><b>NotionComposeEditor</b> is a <i>composable</i> that allows you to edit <u>formatted text</u> content.</p>
             """.trimIndent()
         )
     }
@@ -64,7 +64,7 @@ fun RichEditorScreen(
                 // BasicRichTextEditor
                 item {
                     Text(
-                        text = "BasicRichTextEditor:",
+                        text = "Basic NotionComposeEditor:",
                         style = MaterialTheme.typography.titleMedium
                     )
                 }
@@ -95,7 +95,7 @@ fun RichEditorScreen(
                 // RichTextEditor
                 item {
                     Text(
-                        text = "RichTextEditor:",
+                        text = "NotionComposeEditor:",
                         style = MaterialTheme.typography.titleMedium
                     )
                 }
@@ -127,7 +127,7 @@ fun RichEditorScreen(
                 // OutlinedRichTextEditor
                 item {
                     Text(
-                        text = "OutlinedRichTextEditor:",
+                        text = "Outlined NotionComposeEditor:",
                         style = MaterialTheme.typography.titleMedium
                     )
                 }
@@ -158,7 +158,7 @@ fun RichEditorScreen(
                 // RichText
                 item {
                     Text(
-                        text = "RichText:",
+                        text = "NotionComposeEditor:",
                         style = MaterialTheme.typography.titleMedium
                     )
                 }

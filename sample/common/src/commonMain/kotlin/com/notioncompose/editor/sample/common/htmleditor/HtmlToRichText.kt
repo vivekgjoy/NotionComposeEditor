@@ -89,7 +89,7 @@ fun HtmlToRichText(
                 .weight(1f)
         ) {
             Text(
-                text = "Rich Text:",
+                text = "NotionComposeEditor:",
                 style = MaterialTheme.typography.titleMedium,
                 modifier = Modifier
             )

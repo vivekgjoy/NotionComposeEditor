@@ -66,7 +66,7 @@ fun HomeScreen(
                 Button(
                     onClick = navigateToRichEditor,
                 ) {
-                    Text("Rich Text Editor Demo")
+                    Text("NotionComposeEditor Demo")
                 }
             }
 
