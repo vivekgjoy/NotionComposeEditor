@@ -10,7 +10,7 @@ import org.jetbrains.skiko.wasm.onWasmReady
 fun main() {
     onWasmReady {
         CanvasBasedWindow(
-            title = "Compose Rich Editor"
+            title = "NotionComposeEditor"
         ) {
             Box(Modifier.fillMaxSize()) {
                 App()

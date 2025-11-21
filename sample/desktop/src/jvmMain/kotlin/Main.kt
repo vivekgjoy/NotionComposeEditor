@@ -5,7 +5,7 @@ import com.notioncompose.editor.sample.common.App
 
 fun main() = application {
     Window(
-        title = "Compose Rich Editor",
+        title = "NotionComposeEditor",
         onCloseRequest = ::exitApplication
     ) {
         App()

@@ -2,7 +2,7 @@
 
 ## Artifacts
 
-Compose Rich Editor has only one artifact, for now, published to `mavenCentral()`:
+NotionComposeEditor has only one artifact, for now, published to `mavenCentral()`:
 
 * `com.notioncompose.editor:richeditor-compose`: The default artifact which includes all the functionalities of the library.
 
@@ -67,7 +67,7 @@ Check out [the full documentation](paragraph_style.md) for more info.
 
 ## Supported Styling Formats
 
-The styling formats supported by Compose Rich Editor:
+The styling formats supported by NotionComposeEditor:
 
 ### Text Formatting
 * Bold

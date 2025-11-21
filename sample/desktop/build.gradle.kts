@@ -8,7 +8,7 @@ plugins {
 
 kotlin {
     jvm {
-        withJava()
+        // withJava() removed - Kotlin multiplatform plugin compiles Java sources by default
     }
 
     sourceSets.jvmMain.dependencies {
@@ -22,7 +22,7 @@ compose.desktop {
         mainClass = "MainKt"
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
-            packageName = "compose-richeditor"
+            packageName = "notioncomposeeditor"
             packageVersion = "1.0.0"
 
             macOS {

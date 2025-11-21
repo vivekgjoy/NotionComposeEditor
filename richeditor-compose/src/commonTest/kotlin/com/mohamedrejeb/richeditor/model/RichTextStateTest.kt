@@ -2309,7 +2309,7 @@ class RichTextStateTest {
      * Test to mimic the behavior of the Android suggestion.
      * Can only reproduced on real device.
      *
-     * [420](https://github.com/MohamedRejeb/compose-rich-editor/issues/420)
+     * [420](https://github.com/vivekgjoy/NotionComposeEditor/issues/420)
      */
     @Test
     fun testMimicAndroidSuggestion() {

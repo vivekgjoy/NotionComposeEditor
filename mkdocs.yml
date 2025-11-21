@@ -1,16 +1,16 @@
 # Project information
-site_name: 'Compose Rich Editor'
+site_name: 'NotionComposeEditor'
 site_description: 'A rich text editor for Jetpack Compose and Compose multiplatform.'
-site_author: 'Mohamed Rejeb'
-site_url: 'https://github.com/MohamedRejeb/Compose-Rich-Editor'
+site_author: 'vivekgjoy'
+site_url: 'https://github.com/vivekgjoy/NotionComposeEditor'
 remote_branch: gh-pages
 edit_uri: ""
 
 docs_dir: docs
 
 # Repository
-repo_name: 'Compose-Rich-Editor'
-repo_url: 'https://github.com/MohamedRejeb/Compose-Rich-Editor'
+repo_name: 'NotionComposeEditor'
+repo_url: 'https://github.com/vivekgjoy/NotionComposeEditor'
 
 # Configuration
 theme:
@@ -42,11 +42,7 @@ theme:
 extra:
   social:
     - icon: fontawesome/brands/github-alt
-      link: https://github.com/MohamedRejeb
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/MohamadRejeb
-    - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/mohamedrejeb/
+      link: https://github.com/vivekgjoy
 
 # Navigation
 nav:
@@ -66,8 +62,8 @@ nav:
   #- 'Change Log': changelog.md
   #- 'Contributing': contributing.md
   - 'Code of Conduct': code_of_conduct.md
-  - 'Sample code': https://github.com/MohamedRejeb/Compose-Rich-Editor/blob/main/sample/common/src/commonMain/kotlin/com/mohamedrejeb/richeditor/sample/common
-  - '🕸️ Sample WASM app': https://compose-richeditor.netlify.app/
+  - 'Sample code': https://github.com/vivekgjoy/NotionComposeEditor/blob/main/sample/common/src/commonMain/kotlin/com/notioncompose/editor/sample/common
+  - '🕸️ Sample WASM app': https://notioncomposeeditor.netlify.app/
 
 # Extensions
 markdown_extensions:
@@ -98,4 +94,4 @@ plugins:
 
 # Copyright
 copyright: |
-  &copy; 2023 <a href="https://github.com/MohamedRejeb"  target="_blank" rel="noopener">Mohamed Rejeb</a>
+  &copy; 2024 <a href="https://github.com/vivekgjoy"  target="_blank" rel="noopener">vivekgjoy</a>

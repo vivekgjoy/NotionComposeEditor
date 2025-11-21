@@ -1,18 +1,18 @@
 [![Kotlin](https://img.shields.io/badge/kotlin-2.1.10-blue.svg?logo=kotlin)](http://kotlinlang.org)
 [![Compose](https://img.shields.io/badge/compose-1.7.3-blue.svg?logo=jetpackcompose)](https://www.jetbrains.com/lp/compose-multiplatform)
-[![MohamedRejeb](https://raw.githubusercontent.com/MohamedRejeb/MohamedRejeb/main/badges/mohamedrejeb.svg)](https://github.com/MohamedRejeb)
+[![vivekgjoy](https://raw.githubusercontent.com/vivekgjoy/vivekgjoy/main/badges/vivekgjoy.svg)](https://github.com/vivekgjoy)
 [![Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-green.svg)](https://opensource.org/licenses/Apache-2.0)
 [![API](https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=21)
 [![Maven Central](https://img.shields.io/maven-central/v/com.notioncompose.editor/richeditor-compose/1.0.0-rc13)](https://search.maven.org/search?q=g:%22com.notioncompose.editor%22%20AND%20a:%22richeditor-compose%22)
 
-![Compose Rich Editor](images/logo-large-light.svg#only-light)
-![Compose Rich Editor](images/logo-large-dark.svg#only-dark)
+![NotionComposeEditor](images/logo-large-light.svg#only-light)
+![NotionComposeEditor](images/logo-large-dark.svg#only-dark)
 
 A rich text editor library for both Jetpack Compose and Compose Multiplatform, fully customizable and supports the common rich text editor features
 
-- **Multiplatform**: Compose Rich Editor supports Compose Multiplatform (Android, iOS, Desktop, Web).
-- **Easy to use**: Compose Rich Editor's API leverages Kotlin's language features for simplicity and minimal boilerplate.
-- **WYSIWYG**: Compose Rich Editor is a WYSIWYG editor that supports the most common text styling features.
+- **Multiplatform**: NotionComposeEditor supports Compose Multiplatform (Android, iOS, Desktop, Web).
+- **Easy to use**: NotionComposeEditor's API leverages Kotlin's language features for simplicity and minimal boilerplate.
+- **WYSIWYG**: NotionComposeEditor is a WYSIWYG editor that supports the most common text styling features.
 
 ## Screenshots
 
@@ -29,7 +29,7 @@ A rich text editor library for both Jetpack Compose and Compose Multiplatform, f
 
 [![Maven Central](https://img.shields.io/maven-central/v/com.notioncompose.editor/richeditor-compose/1.0.0-rc13)](https://search.maven.org/search?q=g:%22com.notioncompose.editor%22%20AND%20a:%22richeditor-compose%22)
 
-Compose Rich Editor is available on `mavenCentral()`.
+NotionComposeEditor is available on `mavenCentral()`.
 
 ```kotlin
 implementation("com.notioncompose.editor:richeditor-compose:1.0.0-rc13")
@@ -39,7 +39,7 @@ implementation("com.notioncompose.editor:richeditor-compose:1.0.0-rc13")
 
 [![Maven Central](https://img.shields.io/maven-central/v/com.notioncompose.editor/richeditor-compose/1.0.0-rc13)](https://search.maven.org/search?q=g:%22com.notioncompose.editor%22%20AND%20a:%22richeditor-compose%22)
 
-| Kotlin version | Compose version | Compose Rich Editor version |
+| Kotlin version | Compose version | NotionComposeEditor version |
 |----------------|-----------------|-----------------------------|
 | 2.1.21         | 1.8.2           | 1.0.0-rc13                  |
 | 2.1.10         | 1.7.3           | 1.0.0-rc11                  |
@@ -108,8 +108,8 @@ To add links, `RichTextState` provides `addLink` method:
 ```kotlin
 // Add link after selection.
 richTextState.addLink(
-    text = "Compose Rich Editor",
-    url = "https://github.com/MohamedRejeb/Compose-Rich-Editor"
+    text = "NotionComposeEditor",
+    url = "https://github.com/vivekgjoy/NotionComposeEditor"
 )
 ```
 
@@ -194,7 +194,7 @@ richTextState.config.codeSpanStrokeColor = Color.LightGray
 To convert HTML to `RichTextState`, use `RichTextState.setHtml` method:
 
 ```kotlin
-val html = "<p><b>Compose Rich Editor</b></p>"
+val html = "<p><b>NotionComposeEditor</b></p>"
 richTextState.setHtml(html)
 ```
 
@@ -235,7 +235,7 @@ val markdown = richTextState.toMarkdown()
 
 ## License
 
-    Copyright 2023 Mohamed Rejeb
+    Copyright 2024 vivekgjoy
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

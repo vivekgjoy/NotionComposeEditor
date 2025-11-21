@@ -387,7 +387,7 @@ class RichTextStateMarkdownParserEncodeTest {
         )
     }
 
-    // https://github.com/MohamedRejeb/compose-rich-editor/issues/385
+    // https://github.com/vivekgjoy/NotionComposeEditor/issues/385
     @Test
     fun testInitMarkdownWithEmptyLinesAndTypeText() {
         val state = RichTextState()

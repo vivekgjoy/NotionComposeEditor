@@ -2,7 +2,7 @@
 
 Have a question that isn't part of the FAQ? Open an issue in our [GitHub repository][issues].
 
-[issues]: https://github.com/MohamedRejeb/Compose-Rich-Editor/issues
+[issues]: https://github.com/vivekgjoy/NotionComposeEditor/issues
 
 ## Common Questions
 

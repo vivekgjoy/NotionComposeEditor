@@ -8,7 +8,7 @@ import com.notioncompose.editor.sample.common.App
 @OptIn(ExperimentalComposeUiApi::class)
 fun main() {
     CanvasBasedWindow(
-        title = "Compose Rich Editor"
+        title = "NotionComposeEditor"
     ) {
         Box(Modifier.fillMaxSize()) {
             App()

@@ -1,6 +1,6 @@
-# Upgrading from Compose Rich Editor 0.x to 1.x
+# Upgrading from NotionComposeEditor 0.x to 1.x
 
-This is a short guide to highlight the main changes when upgrading from Compose Rich Editor 0.x to 1.x and how to handle them.
+This is a short guide to highlight the main changes when upgrading from NotionComposeEditor 0.x to 1.x and how to handle them.
 
 ## Calling `RichTextEditor` with `RichTextState`
 

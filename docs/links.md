@@ -16,8 +16,8 @@ To add a new text with a link, use the `addLink` method:
 ```kotlin
 // Add link after selection
 richTextState.addLink(
-    text = "Compose Rich Editor",
-    url = "https://github.com/MohamedRejeb/Compose-Rich-Editor"
+    text = "NotionComposeEditor",
+    url = "https://github.com/vivekgjoy/NotionComposeEditor"
 )
 ```
 
